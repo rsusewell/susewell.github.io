@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>Robert Susewell | Schedule Page </title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+ </head>
+ <body>
+  <!-- Start of Navigation code -->
+  <ul class="topnav">
+   <li><a href="index.html">Home</a></li>
+   <li><a href="about.html">About</a></li>
+   <li><a class="active" href="schedule.html">Schedule</a></li>
+   <li><a href="interests.html">Interests</a></li>
+  </ul>
+   <!-- End of Navigation code -->
+  <article>
+   <h1>Schedule Page</h1>
+    <p>This is the Schedule Page for my classes. Currently I am in 17 credit hours. You can also find future tasks of mine below.</p>
+    <div class="tab">
+      <button class="tablinks" onclick="openClass(event, 'class1')">Class 1</button>
+      <button class="tablinks" onclick="openClass(event, 'class2')">Class 2</button>
+      <button class="tablinks" onclick="openClass(event, 'class3')">Class 3</button>
+      <button class="tablinks" onclick="openClass(event, 'class4')">Class 4</button>
+    </div>
+    
+    <div id="class1" class="tabcontent">
+      <h3>SPAN 105</h3>
+      <p><a href="https://sakai.unc.edu/portal/site/0f5b9061-bf39-48e4-bce1-ce928c0abf5f/page/3c05c518-10d7-4315-a8b3-dbc78a6d6831">SPAN 105: Spanish for High Beginners</a></p>
+      <p>Introduction to the Spanish language and a development of speaking, listening, reading and writing skills through the use of basic texts. Currently learning a language through zoom is proving to be a challenge.</p></p>
+    </div>
+    
+    <div id="class2" class="tabcontent">
+      <h3>COMP 211</h3>
+      <p><a href="https://sakai.unc.edu/access/content/group/bcb48c3b-5188-4ec4-ac95-ac2b53652fc7/Syllabus_SP21.pdf">COMP 211: Systems Fundamentals</a></p>
+      <p>Students enter the course having taken an introductory programming course in a high-level programming language and a course in discrete structures. The overarching goal is to bridge the gap between a students' knowledge of a high-level programming language and computer organization. This class feels like engineering.</p>
+    </div>
+    
+    <div id="class3" class="tabcontent">
+      <h3>HIST 127</h3>
+      <p><a href="https://sakai.unc.edu/portal/site/b92dd5dc-227b-45ed-a7b1-748bb6437333">HIST 127: American History to 1865</a></p>
+      <p>A survey of various aspects of American development during the colonial, revolutionary, and national periods, with stress upon major themes and interpretations. This class teaches me so much about American History.</p>
+    </div>
+    
+    <div id="class4" class="tabcontent">
+      <h3>INLS 161</h3>
+      <p><a href="https://sakai.unc.edu/portal/site/b92dd5dc-227b-45ed-a7b1-748bb6437333">INLS 161: Tools for Information Literacy</a></p>
+     <p>Tools and concepts for information literacy. Includes software use and maintenance, computer applications, and networked information systems. I truly love this class and I made this website for one of my assingments.</p>
+    </div>    
+    
+      </article>
+    
+     <footer>
+     <p>
+      You can put your page last updated code in here...
+    </p>
+     </footer>
+     
+     <!-- don't change any of this javascript. The ClassName is not YOUR class name; it is a JavaScript class The code using Item name so you can use it for
+       interests or classes or any other items. -->
+     <script>
+    function openClass(evt, itemName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(itemName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+    
+    
+    
+    
+  </article>
+ <footer>
+  <p>
+    <script>
+      document.write("Page last updated on " + document.lastModified);
+   </script>
+  </p>
+ </footer>
+</body>
+</html>
